@@ -13,7 +13,7 @@ jobs:
       - checkout
       - run:
           name : install dependencies
-          command : pip install
+          command : pip install -r requirements.txt
       - run :
           name : run the code
           command : python main.py
