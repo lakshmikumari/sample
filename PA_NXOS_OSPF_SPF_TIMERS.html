@@ -1,0 +1,199 @@
+<SCRIPT>
+function showfunc_PA_NXOS_OSPF_SPF_TIMERS() {
+    var element = document.getElementById('showPA_NXOS_OSPF_SPF_TIMERS');
+    if (element != null) element.style.display = 'block';
+    var element = document.getElementById('hidePA_NXOS_OSPF_SPF_TIMERS');
+    if (element != null) element.style.display = 'none';
+}
+</SCRIPT>
+<SCRIPT>
+function hidefunc_PA_NXOS_OSPF_SPF_TIMERS() {
+    var element = document.getElementById('hidePA_NXOS_OSPF_SPF_TIMERS');
+    if (element != null) element.style.display = 'block';
+    var element = document.getElementById('showPA_NXOS_OSPF_SPF_TIMERS');
+    if (element != null) element.style.display = 'none';
+}
+</SCRIPT>
+
+<link rel="stylesheet" type="text/css" href="../../commonImages/reportStylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/reportStylesheet.css">
+
+<A NAME="PR_NXOS_OSPF_SPF_TIMERS" ></A>
+<p style="font-size:11pt;text-align:justify">This table verifies the presence of SPF throttle timer configuration and make sure they are consistent across the OSPF domain.</p><BR/><TABLE style="border-collapse:collapse;mso-pagination:widow-orphan;font-size:10pt;" WIDTH="0" BORDERCOLOR="#000000" BORDER="1" CELLPADDING="4" CELLSPACING="0"><THEAD><TR BGCOLOR="#CCCCCC"><TD VALIGN="Middle" ALIGN="Center" COLSPAN="11"><FONT COLOR="#0000FF" SIZE="+2">OSPF SPF and LSA Throttle Timers</FONT></TD></TR><TR BGCOLOR="#CCCCCC"><TD VALIGN="BOTTOM" ALIGN="CENTER" ROWSPAN="1" COLSPAN="1"><FONT COLOR="#0000FF"><B>Host Name <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP Address)</B></FONT></TD><TD VALIGN="BOTTOM" ALIGN="CENTER" ROWSPAN="1" COLSPAN="1"><FONT COLOR="#0000FF"><B>OSPF Process</B></FONT></TD><TD VALIGN="BOTTOM" ALIGN="CENTER" ROWSPAN="1" COLSPAN="1"><FONT COLOR="#0000FF"><B>AREA Number</B></FONT></TD><TD VALIGN="BOTTOM" ALIGN="CENTER" ROWSPAN="1" COLSPAN="1"><FONT COLOR="#0000FF"><B>OSPF Router ID</B></FONT></TD><TD VALIGN="BOTTOM" ALIGN="CENTER" ROWSPAN="1" COLSPAN="1"><FONT COLOR="#0000FF"><B>Initial SPF Start Timer(msec)</B></FONT></TD><TD VALIGN="BOTTOM" ALIGN="CENTER" ROWSPAN="1" COLSPAN="1"><FONT COLOR="#0000FF"><B>SPF Minimum Hold Timer(msec)</B></FONT></TD><TD VALIGN="BOTTOM" ALIGN="CENTER" ROWSPAN="1" COLSPAN="1"><FONT COLOR="#0000FF"><B>SPF Maximum Wait Timer(msec)</B></FONT></TD><TD VALIGN="BOTTOM" ALIGN="CENTER" ROWSPAN="1" COLSPAN="1"><FONT COLOR="#0000FF"><B>Min LSA Interval (sec)</B></FONT></TD><TD VALIGN="BOTTOM" ALIGN="CENTER" ROWSPAN="1" COLSPAN="1"><FONT COLOR="#0000FF"><B>Min LSA Arrival (msec)</B></FONT></TD><TD VALIGN="BOTTOM" ALIGN="CENTER" ROWSPAN="1" COLSPAN="1"><FONT COLOR="#0000FF"><B>LSA Group pacing timer (sec)</B></FONT></TD><TD VALIGN="BOTTOM" ALIGN="CENTER" ROWSPAN="1" COLSPAN="1"><FONT COLOR="#0000FF"><B>NREPs</B></FONT></TD></TR></THEAD><TR class="bgWht"><TD class="LTN">N9K-1<BR/>&nbsp;&nbsp;&nbsp;(10.197.249.171)</TD><TD class="RTN">100</TD><TD class="RTN">0.0.0.0</TD><TD class="RTN">1.1.1.1</TD><TD class="RTN">200.000</TD><TD class="RTN">1000.000</TD><TD class="RTN">5000.000</TD><TD class="RTN">5</TD><TD class="RTN">1000</TD><TD class="RTN">10</TD><TD class="LTY">0</TD></TR><TR class="bgGrey"><TD class="LTN">N9K-1<BR/>&nbsp;&nbsp;&nbsp;(10.197.249.171)</TD><TD class="RTN">100</TD><TD class="RTN">0.0.0.2</TD><TD class="RTN">1.1.1.1</TD><TD class="RTN">200.000</TD><TD class="RTN">1000.000</TD><TD class="RTN">5000.000</TD><TD class="RTN">5</TD><TD class="RTN">1000</TD><TD class="RTN">10</TD><TD class="LTY">0</TD></TR></TABLE><br><DIV id=showPA_NXOS_OSPF_SPF_TIMERS style="display:none">
+<a href='test' onclick="javascript:document.getElementById('hidePA_NXOS_OSPF_SPF_TIMERS').style.display = 'block'; document.getElementById('showPA_NXOS_OSPF_SPF_TIMERS').style.display = 'none'; return false;">
+Hide Description Table for OSPF SPF and LSA Throttle Timers</a>
+<br><br>
+<TABLE border=1 colspan=0 cellpadding=0 style='font-size: 8.0pt;border-collapse: collapse' bordercolor='#000000' WIDTH='80%'>
+<TR BGCOLOR='#CCCCCC'>
+<TD ID='nodeLabel' class="vAlign150" ><b><span style='color: blue'>
+Host Name <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP Address)</TD>
+<TD class="vAlign400" >
+</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Description</TD>
+<TD ID='nodeDesc' class="vAlign400" >
+Name of the device.</TD>
+</TR>
+<TR BGCOLOR='#CCCCCC'>
+<TD ID='routingprocessLabel' class="vAlign150" ><b><span style='color: blue'>
+OSPF Process</TD>
+<TD class="vAlign400" >
+</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Description</TD>
+<TD ID='routingprocessDesc' class="vAlign400" >
+OSPF Process id.</TD>
+</TR>
+<TR BGCOLOR='#CCCCCC'>
+<TD ID='area_numberLabel' class="vAlign150" ><b><span style='color: blue'>
+AREA Number</TD>
+<TD class="vAlign400" >
+</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Description</TD>
+<TD ID='area_numberDesc' class="vAlign400" >
+Area Number.</TD>
+</TR>
+<TR BGCOLOR='#CCCCCC'>
+<TD ID='routeridLabel' class="vAlign150" ><b><span style='color: blue'>
+OSPF Router ID</TD>
+<TD class="vAlign400" >
+</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Description</TD>
+<TD ID='routeridDesc' class="vAlign400" >
+OSPF Router ID of the analyzed router.</TD>
+</TR>
+<TR BGCOLOR='#CCCCCC'>
+<TD ID='spfdelayLabel' class="vAlign150" ><b><span style='color: blue'>
+Initial SPF Start Timer(msec)</TD>
+<TD class="vAlign400" >
+</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Description</TD>
+<TD ID='spfdelayDesc' class="vAlign400" >
+Check if timers <b>timers throttle spf</b><b><i> spf-start spf-hold spf-max-wait</b></i> OSPF configuration is present.</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Net Rule</TD>
+<TD ID='spfdelayNetrule' class="vAlign400" >
+<b><span style="background: #FF0000">High</span></b>: if start timers are not the same on all
+						routers in the same area.</TD>
+</TR>
+<TR BGCOLOR='#CCCCCC'>
+<TD ID='min_spf_holdLabel' class="vAlign150" ><b><span style='color: blue'>
+SPF Minimum Hold Timer(msec)</TD>
+<TD class="vAlign400" >
+</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Description</TD>
+<TD ID='min_spf_holdDesc' class="vAlign400" >
+Check if timers <b>timers throttle spf</b> <i><b>spf-start spf-hold spf-max-wait</b></i> OSPF configuration is present.</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Net Rule</TD>
+<TD ID='min_spf_holdNetrule' class="vAlign400" >
+<b><span style="background: #FF0000">High</span></b>: if hold timers are not same on all
+						routers in the same area.</TD>
+</TR>
+<TR BGCOLOR='#CCCCCC'>
+<TD ID='max_spf_waitLabel' class="vAlign150" ><b><span style='color: blue'>
+SPF Maximum Wait Timer(msec)</TD>
+<TD class="vAlign400" >
+</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Description</TD>
+<TD ID='max_spf_waitDesc' class="vAlign400" >
+Check if timers <b>timers throttle spf</b><b><i> spf-start spf-hold spf-max-wait</b></i> OSPF configuration is present.</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Net Rule</TD>
+<TD ID='max_spf_waitNetrule' class="vAlign400" >
+<b><span style="background: #FF0000">High</span></b>: if wait timers are not same on all
+						routers in the same area.</TD>
+</TR>
+<TR BGCOLOR='#CCCCCC'>
+<TD ID='min_lsa_intLabel' class="vAlign150" ><b><span style='color: blue'>
+Min LSA Interval (sec)</TD>
+<TD class="vAlign400" >
+</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Description</TD>
+<TD ID='min_lsa_intDesc' class="vAlign400" >
+Minimum interval (in seconds) between link-state advertisements.</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Net Rule</TD>
+<TD ID='min_lsa_intNetrule' class="vAlign400" >
+<b><span style="background: #FF0000">High</span></b>: if Min LSA Intervals are not same on all
+						routers in the same area.</TD>
+</TR>
+<TR BGCOLOR='#CCCCCC'>
+<TD ID='min_lsa_arrLabel' class="vAlign150" ><b><span style='color: blue'>
+Min LSA Arrival (msec)</TD>
+<TD class="vAlign400" >
+</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Description</TD>
+<TD ID='min_lsa_arrDesc' class="vAlign400" >
+Minimum arrival time (in milliseconds) of link-state advertisements.</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Net Rule</TD>
+<TD ID='min_lsa_arrNetrule' class="vAlign400" >
+<b><span style="background: #FF0000">High</span></b>: if Min LSA Arrivals are not same on all
+						routers in the same area.</TD>
+</TR>
+<TR BGCOLOR='#CCCCCC'>
+<TD ID='lsa_gp_timerLabel' class="vAlign150" ><b><span style='color: blue'>
+LSA Group pacing timer (sec)</TD>
+<TD class="vAlign400" >
+</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Description</TD>
+<TD ID='lsa_gp_timerDesc' class="vAlign400" >
+Configured LSA group pacing timer (in seconds).</TD>
+</TR>
+<TR BGCOLOR='#CCCCCC'>
+<TD ID='nrepLabel' class="vAlign150" ><b><span style='color: blue'>
+NREPs</TD>
+<TD class="vAlign400" >
+</TD>
+</TR>
+<TR>
+<TD class="vAlign150" >
+Description</TD>
+<TD ID='nrepDesc' class="vAlign400" >
+Net Rule Exception Points.</TD>
+</TR>
+</Table>
+</DIV>
+<DIV id=hidePA_NXOS_OSPF_SPF_TIMERS>
+<a href='test' onclick="javascript:document.getElementById('showPA_NXOS_OSPF_SPF_TIMERS').style.display = 'block'; document.getElementById('hidePA_NXOS_OSPF_SPF_TIMERS').style.display = 'none'; return false;">
+Show Description Table for OSPF SPF and LSA Throttle Timers</a>
+</DIV>
